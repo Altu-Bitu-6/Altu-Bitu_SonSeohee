@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/82103/Desktop/AltuBitu/Altu-Bitu-SonSeohee/08_DFS&BFS",
-      "program": "c:/Users/82103/Desktop/AltuBitu/Altu-Bitu-SonSeohee/08_DFS&BFS/build/Debug/outDebug",
+      "cwd": "c:/Users/82103/Desktop/AltuBitu/Altu-Bitu-SonSeohee/09_백트래킹",
+      "program": "c:/Users/82103/Desktop/AltuBitu/Altu-Bitu-SonSeohee/09_백트래킹/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

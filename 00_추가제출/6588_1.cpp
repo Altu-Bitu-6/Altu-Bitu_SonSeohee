@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//ì—ë¼í† ìŠ¤í…Œë„¤ìŠ¤ì˜ ì²´ë¡œ ì†Œìˆ˜ êµ¬í•˜ëŠ” í•¨ìˆ˜
+//¿¡¶óÅä½ºÅ×³×½ºÀÇ Ã¼·Î ¼Ò¼ö ±¸ÇÏ´Â ÇÔ¼ö
 vector<int> getPrime(int a) {
 	vector<bool> isPrime(a + 1, true);
 	vector<int> prime;
@@ -20,11 +20,11 @@ vector<int> getPrime(int a) {
 	return prime;
 }
 
-//ê³¨ë“œë°”íì˜ ì¶”ì¸¡ ê²€ì¦
+//°ñµå¹ÙÈåÀÇ ÃßÃø °ËÁõ
 void goldbachConj(int a, const vector<int> prime) {
 	int x = 0;
 	int y = 0;
-	for (int i = 1 ; i < prime.size(); i++) {
+	for (int i = 1; i < prime.size(); i++) {
 		if (prime[i] > a / 2) { break; }
 		int complement = a - prime[i];
 		bool isComplementPrime = true;
@@ -34,7 +34,7 @@ void goldbachConj(int a, const vector<int> prime) {
 				break;
 			}
 		}*/
-		
+
 		for (int j = 0; j < prime.size(); j++) {
 			if (prime[j] == complement) {
 				break;
@@ -54,9 +54,9 @@ void goldbachConj(int a, const vector<int> prime) {
 }
 
 int main() {
-	vector<int> prime = getPrime(1000000);//ë°±ë§Œ ì´í•˜ ì†Œìˆ˜ êµ¬í•¨
-
+	vector<int> prime = getPrime(1000000);//¹é¸¸ ÀÌÇÏ ¼Ò¼ö ±¸ÇÔ
 	vector<int> input;
+
 	while (true) {
 		int n;
 		cin >> n;
@@ -64,8 +64,8 @@ int main() {
 		input.push_back(n);
 	}
 
-	for(int n : input){
-		goldbachConj(n, prime);
+	for (int z : input) {
+		goldbachConj(z, prime);
 	}
 
 	return 0;
